@@ -35,7 +35,7 @@ public class TrainTicket {
             message = "Non ci sono sconti disponibili";
         }
 
-        String decimalFormat = new DecimalFormat("#.##").format(discountedPrice);
+        String decimalFormat = new DecimalFormat("###.##").format(discountedPrice);
 
         System.out.println(message + " il prezzo finale è " + decimalFormat);
     }
