@@ -8,7 +8,6 @@ public class TrainTicket {
 
         Scanner scan = new Scanner(System.in);
 
-
         System.out.println("Inserisci la distanza che vuoi percorrere:");
         int distance = Integer.parseInt(scan.nextLine());
         System.out.println("Inserisci la tua età:");
