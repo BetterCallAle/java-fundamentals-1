@@ -8,11 +8,11 @@ public class FizzBuzz {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int numberToPrint = 100;
+
         do{
             System.out.println("Inserisci quanti numeri vuoi stampare:");
             numberToPrint = Integer.parseInt(scan.nextLine());
         } while(numberToPrint < 0 || numberToPrint > 1000);
-
 
         String[] arrayNumber = new String[numberToPrint];
 

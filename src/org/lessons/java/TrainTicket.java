@@ -16,7 +16,9 @@ public class TrainTicket {
         double pricePerKm = 0.21;
         double totalPrice = pricePerKm * distance;
         double discountedPrice = 0;
+
         String message = "Il tuo sconto è del ";
+
         System.out.println("Prezzo totale " + totalPrice);
 
         if(age < 18){
