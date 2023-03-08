@@ -1,11 +1,14 @@
 package org.lessons.java;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class TrainTicket {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+
+
         System.out.println("Inserisci la distanza che vuoi percorrere:");
         int distance = Integer.parseInt(scan.nextLine());
         System.out.println("Inserisci la tua età:");
@@ -25,9 +28,11 @@ public class TrainTicket {
             message += "40%";
         } else {
             discountedPrice = totalPrice;
-            message += "Non ci sono sconti disponibili";
+            message = "Non ci sono sconti disponibili";
         }
 
-        System.out.println(message + " il prezzo finale è " + discountedPrice);
+        String decimalFormat = new DecimalFormat("#.##").format(discountedPrice);
+
+        System.out.println(message + " il prezzo finale è " + decimalFormat);
     }
 }
