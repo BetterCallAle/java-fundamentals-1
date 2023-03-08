@@ -14,6 +14,8 @@ public class FizzBuzz {
             numberToPrint = Integer.parseInt(scan.nextLine());
         } while(numberToPrint < 0 || numberToPrint > 1000);
 
+        scan.close();
+
         String[] arrayNumber = new String[numberToPrint];
 
         for(int i = 0; i < arrayNumber.length; i++){

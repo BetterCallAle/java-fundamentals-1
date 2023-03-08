@@ -6,12 +6,15 @@ import java.util.Scanner;
 public class TrainTicket {
     public static void main(String[] args) {
 
+        // Scan
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Inserisci la distanza che vuoi percorrere:");
         int distance = Integer.parseInt(scan.nextLine());
         System.out.println("Inserisci la tua età:");
         int age = Integer.parseInt(scan.nextLine());
+        scan.close();
+        // Close scan
 
         double pricePerKm = 0.21;
         double totalPrice = pricePerKm * distance;
